@@ -1,35 +1,52 @@
+*{
+	box-sizing: border-box;
+}
 /* styles for body */
 body{
 	background-color: #FCEBB6; /* set background-color */
 	background-image: url(../image/fadedroad50.jpg); /* set background image*/
+	background-attachment:fixed;
 	background-repeat: no-repeat; /* prevent background image from repeating*/
-	background-size: cover;/* cover the entire element with the background image */
-	color: #221811;/* set text color /* set color */ 
-	font-family : Tahoma, Arial, san-serif; /* Define font-family */
+	background-size: cover;/* cover the entire element with the background image*/
+	color: #221811;/* set text color */
+	font-family : Tahoma, Arial, sans-serif; /* Define font-family */
 	
 }
 
 /* styles for the wrapper */
-#Wrapper {
-	background-color: #FEFAEB;/* set background-color */
+#wrapper {
+	background-color: #231814;/* set background-color */
 	margin-left: auto; /*center the element horizontally */
-	margin-right: auto ;/* center the element horizontally */
+	margin-right: auto;/* center the element horizontally */
 	width: 80%;/*set width to 80% of the parent container */
 	min-width:900px;/* set  minimum width */
-	box-shadow: 3px 3px 3px #676767; /* add box shadow*/
+	max-width: 1280px;
+	box-shadow: 6px 6px 6px #333; /* add box shadow*/
+	padding:0;
 }
 	
 	/* styles for the header*/
 header {
-	background-color: #D2B48C;/* set background-color*/
-	color: #8C3826; /* set text color */
-	text-align: center; /* Align text to the center */
-	padding-top: 5px; /* Add top padding*/
-	padding-bottom: 5px; /*Add bottom padding*/
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color:#D2B48C;/* set background-color*/
+	color: #231814; /* set text color */
+	background-color:#D2B48C;
+	background-image: url(../image/coffeelogo.jpg);
+	background-repeat:no-repeat;
+	padding-left:240px;
 	}
-	
+	header a  { text-decoration: none;}
+	header a:link {color:#231814;}
+	header a:visited { color:#231814;}
+	header a:hover {color:#FEE6C2}
 	/* styles for headings */
-h1 {
+
+main h2, h3, h4, p, div, ul, dl {
+	padding-left: 3em;
+	padding-right: 2em;
+}
+h1 { 
 	font-size: 3em; /* set font size for h1*/
 }
 h2 {
@@ -42,30 +59,58 @@ h4 {
 	background-color: #D2B48C; /* set background color for h4 */
 	font-size: 1.2em;/* set font size for h4*/
 	padding-left: .5em; /* Add left padding*/
-	padding-bottom: .25em; /* Add bottom padding*/
+	padding-bottom: 0; /* Add bottom padding*/
+	text-transform: uppercase;
+	border-bottom: 1px solid #221811;
+	clear: left;
 }
 /* styles for Navigation */
-	nav{
+nav {
 	font-weight: bold;/* set font weight*/
 	text-align: center; /* align text to the centder */
 	font-size: 1.5em; /* set font size*/
 	padding-top: 5px;/*Add top padding*/
 	padding-bottom: 5px;/* Add bottom padding*/
+	float: left;
+	width: 200px;
 }
-nav a {
-	text-decoration: none; /* Remove underline from links */
+nav a {text-decoration: none; /* Remove underline from links */}
+nav a:link {
+color: #FEE6C2;
+}
+nav a:visited {
+color: #D2B48C;
+}
+nav a:hover { 
+color:#CC9933;
+	
+}
+nav ul {
+	list-style-type: none;
+	padding-left:0;
 }
 /* styles for main content*/
 main { 
 	display: block;/* Display as block element */
-	padding-left: 2em; /* Add left padding */
-	padding-right: 2em; /*Add right padding*/
-	padding-bottom: 2em; /* Add bottom padding*/
+	padding: 0 0 2em 0; /* Add left padding */
+	background-color: #FeF6C2; /*Add right padding*/
+	overflow: auto; /* Add bottom padding*/
+	margin-left: 200px;
 }
 /* styles for the details*/
-.details {	
+  .details {	
 	padding-left: 20%; /*Add left padding */
 	padding-right:20%; /*Add right padding*/
+	overflow: auto;
+}
+.floatleft {
+	float: left;
+	padding-right: 2em;
+	padding-bottom: 2em;
+}
+.onethird {
+	float: left;
+	width: 33%;
 }
 /* styles for images*/
 img {
@@ -77,7 +122,20 @@ img {
 	height: 300px; /* set height */
 	background-image: url(../image/hero.jpg); /* set background image */
 	background-repeat: no-repeat; /* prevent background image from repeating*/
+	background-size: 100% 100%; /* cover the entire element with the background image*/
+	height: 300px;
+}
+#heromugs {
+	height: 300px; /* set height */
+	background-image: url(../image/heromugs.jpg); /* set background image */
+	background-repeat: no-repeat; /* prevent background image from repeating*/
 	background-size: cover; /* cover the entire element with the background image*/
+}
+#heroguitar {
+	height: 300px; /* set height */
+	background-image: url(../image/heroguitar.jpg); /* set background image */
+	background-repeat: no-repeat; /* prevent background image from repeating*/
+	background-size: 100% 100%; /* cover the entire element with the background image*/
 }
 /* styles for the Footer */
 footer {
@@ -85,7 +143,6 @@ footer {
 	font-size: .60em; /* set font-size*/
 	font-style:italic ; /* set font stylesto italic */
 	text-align:center;/* Align text to the center */
-	padding-bottom: 1em ; /*Add bottom padding */
+	padding: 1em ; /*Add bottom padding */
 	border-top: 2px solid #8c3826; /* Add top border */
 }
-	

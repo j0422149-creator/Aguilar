@@ -38,14 +38,16 @@ body { background-color: #ffffff;
 		   background-color: #edbcf4;
 		   box-shadow: 5px 5px 5px #000000;
 }
-h1 { background-image: url(../images/logo.gif);
+h1 { background-image: url(../images/123.png);
      background-repeat: no-repeat;
      background-color: #dcb9fb;
-	 height: 110px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height:110px;
 	 font-family: Georgia, "Bodoni MT", serif;
 	 font-size: 4.5em;
-     padding-left: 220px;
-	 padding-top: 20px;
+     padding:20px;
 	 text-shadow: 3px 3px 3px #d0bd80;
         margin-top: 20px;
 	 margin-bottom: 0;
@@ -60,8 +62,8 @@ h1 { background-image: url(../images/logo.gif);
        flex:1;
 }
 .image img{
-       width: 300;
-       height: 200;
+       width: 300px;
+       height: 200px;
        border-radius: 10px;
 }
 nav { padding-top: 10px;
@@ -113,7 +115,18 @@ th, td {
 	border: 1px solid black;
 	padding: 8px;
 }
-@media (max-width: 600px){ 
+@media (max-width: 600px){
+	
+h1{
+	
+align-items: center;
+display: flex;
+font-size: 2.5em;
+padding: 20px;
+text-align: center;
+justify-content: center;
+background-image: none;
+}
 nav {
        float: none;
        width: 100%
@@ -125,4 +138,13 @@ img{
        width: 100%;
        height: auto;
 }
+nav ul{
+text-align:center;
+padding:0;
 }
+
+nav li{
+display:block;
+padding:10px;
+}
+	

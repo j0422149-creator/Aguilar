@@ -24,11 +24,33 @@
   </ul>
   </nav>
   <main> 
-  <img src="../images/chataction.png" alt="alt text here" width="300" height="150"><h3>Action Room</h3><p>The Action Room is a room where you can read everything action packed with various puzzels arourd the room to solve. Our breakfest contains a English muffin with eggs, cheese and meat on the biscuit.Our other breakfest is a cup of yogurt,granola and fruit. we aso have pancakes with furit of your chosing on it.</p>
+   <script>
+</script>
+<h3>Action Room</h3><p>The Action Room is a room where you can read everything action packed with various puzzels arourd the room to solve. Our breakfest contains a English muffin with eggs, cheese and meat on the biscuit.Our other breakfest is a cup of yogurt,granola and fruit. we aso have pancakes with furit of your chosing on it.</p>
   <h3> The room price</h3>
   <p> the room cost 100$ a night with breakfest included depending on what you get for example our English muffins are free but our pancakes are not.</p>
   <h3> Specilal breakfest items</h3>
   <p> our pancakes are 12$ dollars and our yogurt cups are 4$ each.</p>
+   <script>
+const images = [
+"../images/action-room.png",
+"../images/action-breakfest.png"
+];
+
+let current = 0;
+
+setInterval(function () {
+current++;
+
+if(current >= images.length){
+current = 0;
+}
+
+document.getElementById("slideshow").src = images[current];
+
+}, 3000);
+</script>
+<img id="slideshow" src="images/action-breakfest.png" alt="Book Nook Breakfest">
   </main>
   <footer>
   Copyright &copy; 2026 <a href="mailto:j0422149@amarillocollege.com">Jocelyn Aguilar</a>
